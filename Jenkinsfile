@@ -3,7 +3,15 @@ pipeline {
   environment {
     dockerimagename = "h264/sample-react"
     dockerImage = "h264/sample-react:latest"
+    tools {
+      'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'docker'
+    }
   }
+  
+  tools {
+    'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'docker'
+  }
+
 
   agent any
 
