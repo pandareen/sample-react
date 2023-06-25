@@ -5,7 +5,7 @@ pipeline {
     dockerImage = "h264/sample-react:latest"
   }
 
-  agent 'docker'
+  agent any
 
   stages {
 
