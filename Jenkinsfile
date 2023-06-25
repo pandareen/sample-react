@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/pandareen/sample-react/'
+        git branch: 'main', url: 'https://github.com/pandareen/sample-react/'
       }
     }
 
